@@ -1,139 +1,340 @@
 <!DOCTYPE html>
-<html lang="en" id="html">
-<head>
-    <meta charset="UTF-8">
-    <title>Nuno Silva</title>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
 
-    <link rel="icon" href="https://raw.githubusercontent.com/nmssilva/me/master/icon.PNG">
-    <script type="text/javascript" src="./index.js"></script>
-    <style>
+<html class="no-js"> <!--<![endif]-->
+    <head>
+        <title>Nuno Silva</title>
 
-        * { margin: 0; padding: 0; }
+        <!-- meta -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/font_icon/css/pe-icon-7-stroke.css">
+        <link rel="stylesheet" href="assets/font_icon/css/helper.css">
+        <link rel="stylesheet" href="assets/css/owl.carousel.css">
+        <link rel="stylesheet" href="assets/css/owl.theme.css">
+        <link rel="stylesheet" href="assets/css/animate.css">
+        <link rel="stylesheet" href="assets/css/style.css">
 
-        @font-face {
-            font-family: Capitolina;
-            src: url(Capitolina.ttf);
-        }
+        <!-- google fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis:200,300,400,500|Lato:300,400,700,900,300italic,400italic,700italic,900italic|Raleway:400,200,300,500,100|Titillium+Web:400,200,300italic,300,200italic' rel='stylesheet' type='text/css'>
 
-        @font-face {
-            font-family: Acrom;
-            src: url(AcromRegular.ttf);
-        }
+        <script src="assets/js/modernizr.js"></script>
 
-        html {
-            background: url(backgrnd.jpg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            min-width: 100%;
-            min-height: 100%;
-        }
+        <style>
+            @font-face {
+                font-family: Capitolina;
+                src: url(assets/font_icon/fonts/Capitolina.ttf);
+            }
 
-        body {overflow: hidden} /*disable scrolling before pessing monogram*/
+            @font-face {
+                font-family: Acrom;
+                src: url(assets/font_icon/fonts/AcromRegular.ttf);
+            }
 
-        #loader {
-            position: fixed;
-            width: 100%;
-            height: 100%;
-        }
+            #img-monogram:hover {
+                filter: brightness(50%) sepia(100%) hue-rotate(307deg) saturate(1000%);
+                cursor: pointer;
+            }
+            #img-monogram{
+                transition: filter .5s ease-out;
+            }
+        </style>
 
-        /* Add animation to "page content" */
-        .animate-bottom {
-            position: relative;
-            -webkit-animation-name: animatebottom;
-            -webkit-animation-duration: 1s;
-            animation-name: animatebottom;
-            animation-duration: 1s
-        }
+    </head>
+    <body id="body">
+        <!--[if lt IE 7]>
+                <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        @-webkit-keyframes animatebottom {
-            from { bottom:-100px; opacity:0 }
-            to { bottom:0px; opacity:1 }
-        }
+        <!-- Header area -->
+        <header id="header">
+            <div class="center text-center">
+                <div id="bgbig-text">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                </div>
+                <p width="100%" style="color: white; font-family: Capitolina; font-size: 25px" >Hello, my name is</p>
 
-        @keyframes animatebottom {
-            from{ bottom:-100px; opacity:0 }
-            to{ bottom:0; opacity:1 }
-        }
+                <img src="assets/images/nunosilva.PNG" width="50%"/>
+                <div id="bg-text">
+                    <br><br><br><br><br><br><br><br><br>
+                </div>
+                <p style="color: white; font-family: Capitolina; font-size: 25px" >Student in MSc Computer and Telematics Engineering at Universidade de Aveiro</p>
+            </div>
+            <div class="bottom">
+                <a data-scroll href="#navigation" class="scrollDown animated pulse" id="scrollToContent"><i class="pe-7s-angle-down-circle pe-va"></i></a>
+            </div>
+        </header>
+
+        <!-- Navigation area -->
+        <section id="navigation">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <div class="logo"><img id="img-monogram" height="75" data-scroll
+                            href="#body" class="logo-text" src="assets/images/monogram.png"></div>
+                    </div>
+                    <div class="col-xs-6">
+                        <div class="nav">
+                            <a href="#" data-placement="bottom" title="Menu" class="menu" data-toggle="dropdown"><i 
+                                class="pe-7s-menu"></i></a>
+                             <div class="dropdown-menu">
+                                 <div class="arrow-up"></div>
+                                 <ul>
+                                     <li><a data-scroll href="#body">Home <i class="pe-7s-home"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#services">Service <i class="pe-7s-config"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#portfolio">Portfolio <i class="pe-7s-glasses"></i></a><span class="menu-effect"></span></li>
+                                     <li><a data-scroll href="#testimonial">Testimonial <i class="pe-7s-comment"></i><span class="menu-effect"></span></a></li>
+                                     <li><a data-scroll href="#contact">Contact <i class="pe-7s-help1"></i></a><span class="menu-effect"></span></li>
+                                 </ul>
+                             </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>            
+        </section>
+        
+        <!-- Content Area -->
+
+        <!-- about me section -->
+
+        <section id="services" class="service-area">
+            <div class="container" style=" font-family: Acrom;">
+                <h2 class="block_title" align="center">About Me</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p align="center"  style="margin-left: 10%; margin-right: 10%;">
+
+                            My name is Nuno Miguel Soares Silva and I was born in Porto. I'm a student in MSc Computer
+                            and Telematics Engineering (Engenharia de Computadores e Telemática) at Universidade de Aveiro.
+                            <br>I'm currently working for a master’s thesis about Augmented Perception for AtlasCar at
+                            Universidade de Aveiro and I'm looking
+                            forward to start working after obtaining master’s degree.
+                            <br><br><br>
+                        </p>
+                    </div>
+                    <div  class="col-md-6">
+                        <img align="center" width="350" src="assets/images/small_photo.png">
+                    </div>
+                    <div>
+                        <p align="center">
+                            &zwnj;<br>&zwnj;<br>&zwnj;<br>&zwnj;<br>&zwnj;<br>&zwnj;<br>&zwnj;
+                        </p>
+                    </div>
+
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">    
+                                <i class="pe-7s-science pe-dj pe-va"></i>
+                                <h3>IoT</h3>
+                                <p>I've developed some IoT projects that gather data and create smart apps.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <i class="pe-7s-config pe-dj pe-va"></i>
+                                <h3>Robotics</h3>
+                                <p>Since I've discovered robotics that I find fascinating frameworks like ROS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <i class="pe-7s-joy pe-dj pe-va"></i>
+                                <h3>Video Games</h3>
+                                <p>I share a great passion for gaming and game development.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="services">
+                            <div class="service-wrap">
+                                <i class="pe-7s-add-user pe-dj pe-va"></i>
+                                <h3>Adaptive Persona</h3>
+                                <p>I'm someone who learns quickly and adapts to any problem to finds solutions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section><!-- services -->
 
 
 
-    </style>
+        <!-- Portfolio Area -->
+        <div class="container-fluid" style="padding-right: 0px; padding-left: 0px; font-family: Acrom;">
+            <!-- About 1 -->
+            <h2 class="block_title" align="center"><br><br><br>My Work<br><br><br></h2>
+            <div class="row color-bg">
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="about-image"
+                         style="background-image:url(https://raw.githubusercontent.com/nmssilva/cv-webgl-spaceinvaders/master/webvadersgl.png); background-position: bottom;">
 
-</head>
-<body onload="runSite()">
+                    </div><!-- about
+                    image 1 -->
+                </div>
+                <div class="col-md-6 about-text">
+                    <h6>High quality webdesign</h6><!-- headline-->
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 1 -->
+                    <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+                </div>
+            </div>
+            <!-- About 2 -->
+            <div class="row">
+                <div class="col-md-6 about-text">
+                    <h6>Professional Photography</h6><!-- Headline -->
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 2 -->
+                    <a href="index.html#team" class="weight-outline-btn">Read more</a>	<!-- read more button  -->
+                </div>
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="about-image" style="background-image:url(assets/images/aovivo.jpg);
+                    background-position: center"></div><!--
+                     about image 2
+                     -->
+                </div>
+            </div>
+            <!-- About 3 -->
+            <div class="row color-bg">
+                <div class="col-md-6 nopadding features-intro-img">
+                    <div class="about-image" style="background-image:url(assets/images/about3.png)"></div><!-- about image 3 -->
+                </div>
+                <div class="col-md-6 about-text">
+                    <h6>3d modeling and animations</h6><!-- Headline-->
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</p><br><!-- About Text 3 -->
+                    <a href="index.html#team" class="weight-outline-btn">Read more</a><!-- read more button  -->
+                </div>
+            </div>
+        </div>
 
+        <!-- Testimonial Area -->
 
-    <div id="loader" style="background-color: black; ">
-        <img id="monogram" src="monogram.PNG" style='cursor: pointer; width:10%; margin-left: auto; margin-right: auto; margin-top: 24%; display: block;' >
-    </div>
+        <section id="testimonial" class="testimonial-area">
+            <div class="container">
+                <h2 class="block_title">Testimonials</h2>
+                <div class="row">
+                    <div class="col-xs-12">
+                    </div>
+                    <div id="testimonial-container" class="col-xs-12">
+                        <div class="testimonila-block">
+                            <img src="assets/images/testimonial.jpg" alt="clients" class="selfshot">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
+                            <strong>Monir Hossain</strong>
+                            <br>
+                            <small>C.E.O</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="assets/images/testimonial2.jpg" alt="clients" class="selfshot">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
+                            <strong>Nur Ul Hossain</strong>
+                            <br>
+                            <small>Project Manager</small>
+                        </div>
+                        <div class="testimonila-block">
+                            <img src="assets/images/testimonial3.jpg" alt="clients" class="selfshot">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem sed mollitia illum! Molestiae dignissimos, hic dolorem et eius ut nobis. Corrupti totam amet aperiam aut voluptate nobis dolor at soluta.</p>
+                            <strong>Hossain Abrar</strong>
+                            <br>
+                            <small>Developer</small>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- container -->
+        </section><!-- testimonial -->
 
+        <!-- Contact Area -->
 
-    <div  align="center" style=" cursor: pointer; position: fixed; z-index: 999; width: 100%; visibility: hidden; ">
-        <br>
-        <img id="monogramhead" src="monogram.PNG" style='width:2%;' border="0" >
-    </div>
+        <section id="contact" class="mapWrap">
+            <div id="googleMap" style="width:100%;"></div>
+            <div id="contact-area">
+                <div class="container">
+                    <h2 class="block_title">Hey !!!</h2>
+                    <div class="row">
+                        <div class="col-xs-12">
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="moreDetails">
+                                <h2 class="con-title">More About me</h2>
+                                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum animi repudiandae nihil aspernatur repellat temporibus doloremque sint ea laboriosam, excepturi iure inventore rerum voluptatibus, suscipit totam, sit necessitatibus. Rerum, blanditiis. </p>
+                                <ul class="address">
+                                    <li><i class="pe-7s-map-marker"></i><span>1600 Pennsylvania Ave NW,<br>Washington, DC 20500,<br>United States</span></li>
+                                    <li><i class="pe-7s-mail"></i><span>example@gmail.com</span></li>
+                                    <li><i class="pe-7s-phone"></i><span>+1-202-555-0144</span></li>
+                                    <li><i class="pe-7s-global"></i><span><a href="#">www.themewagon.com</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h2 class="con-title">Drop us a line</h2>
+                            <form role="form">
+                              <div class="form-group">
+                                <input type="text" class="form-control" id="user_name" placeholder="Enter your name">
+                              </div>
+                              <div class="form-group">
+                                <input type="email" class="form-control" id="your_email" placeholder="Enter your email">
+                              </div>
+                              <div class="form-group">
+                                <textarea name="InputMessage" id="user_message" class="form-control" rows="5" required></textarea>
+                              </div>
 
-    <div style="margin-bottom: 24%"><br></div>
+                              <button type="submit" class="btn medium">Let us know</button>
+                            </form>   
+                        </div>
+                    </div>
+                </div><!-- container -->
+            </div><!-- contact-area -->
+            <div id="social">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <ul class="scoialinks">
+                                <li class="normal-txt">Find me on</li>
+                                <li class="social-icons"><a class="facebook" href="#"></a></li>
+                                <li class="social-icons"><a class="twitter" href="#"></a></li>
+                                <li class="social-icons"><a class="linkedin" href="#"></a></li>
+                                <li class="social-icons"><a class="google-plus" href="#"></a></li>
+                                <li class="social-icons"><a class="wordpress" href="#"></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div><!-- social -->
+        </section><!-- contact -->
 
-    <div align="center">
-        <p width="100%" style="color: white; font-family: Capitolina; font-size: 25px" >Hello, my name is</p>
+        <!-- Footer Area -->
 
-        <img src="nunosilva.PNG" width="50%"/>
-        <br><br>
-        <p style="color: white; font-family: Capitolina; font-size: 25px" >Student in MSc Computer and Telematics Engineering at Universidade de Aveiro</p>
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <p class="copyright">© Copyright 2014 <a href="#" target="_blank">Your Website Link</a></p>
+                    </div>
+                    <div class="col-sm-6">
+                        <p class="designed">Theme by <a href="http://themewagon.com" target="_blank">Themewagon</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
-    </div>
+        <!-- Necessery scripts -->
+        <script src="assets/js/jquery-2.1.3.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+        <script src="assets/js/jquery.actual.min.js"></script>
+        <script src="assets/js/smooth-scroll.js"></script>
+        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/script.js"></script>
 
-    <br><br><br>
-
-    <div align="center">
-        <a href="http://github.com/nmssilva"><img src="github-icon.png" style='width:2.3%;' border="0"/></a>
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <a href="http://www.linkedin.com/in/nmssilva"><img src="linkedin-icon.png" style='width:2.3%;' border="0" /></a>
-
-    </div>
-
-    <br><br><br><br>
-
-    <div align="center">
-        <img src="scroll-down.png" height="60">
-
-    </div>
-
-    <div align="center" style="background-color: black; ">
-
-        <br>
-
-
-        <p style="color: white; text-align: left; font-family: Acrom; font-size: 12px; margin-bottom: 50px; margin-top: 15%; margin-right: 20%; margin-left: 20%;">
-            &nbsp; ───── More about me
-        </p>
-
-        <table style="margin-right: 20%; margin-left: 20%;">
-            <tr>
-                <th>
-
-                    <p style="color: white; text-align: justify; font-family: Acrom; font-size: 12px; font-weight: normal; line-height: 250%;">
-                        My name is Nuno Miguel Soares Silva and I was born in Porto.
-                        I'm a student in MSc Computer and Telematics Engineering (Engenharia de Computadores e Telemática) at Universidade de Aveiro.
-                        I trust in my Asus ROG-GL552VW to code and build up ingenious programs and apps.
-                        I'm looking forward to complete the course and follow a career in software development and I share a passion for video-games.
-                        I made several projects for university and for leisure and you can check them all out at <a style="color: gray" href="http://github.com/nmssilva"><b>my github repositories</b></a>.
-                        Soon, I will start writing a thesis and complete my studies to start some real business.
-                    </p>
-                </th>
-                <th>
-                    <img src="16997311_1097338203711165_1588774768_n.jpg" width="400" style="margin-bottom: 40px">
-                </th>
-            </tr>
-        </table>
-
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-
-    </div>
-
-
-</body>
+    </body>
 </html>
+
